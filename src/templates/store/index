@@ -1,0 +1,23 @@
+import initialState from './init-state';
+
+const actions: Record<
+  string,
+  (state: <%= storeName %>Store, action: <%= storeName %>ActionsTypes) => <%= storeName %>Store
+> = {
+  '': () => {},
+};
+
+const <%= storeName %>Reducer = (
+  state: <%= storeName %>Store = initialState,
+  action: <%= storeName %>ActionsTypes
+): <%= storeName %>Store => {
+  const handler = actions[action.type];
+
+  if (typeof handler === 'function') {
+    return handler(state, action);
+  }
+
+  return state;
+}
+
+export default <%= storeName %>Reducer;

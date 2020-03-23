@@ -1,0 +1,29 @@
+{
+  "name": "@frubana/react-redux-cli",
+  "version": "1.0.0",
+  "description": "React redux cli for react frubana projects",
+  "main": "src/index.js",
+  "bin": {
+    "@frubana/react-redux-cli": "bin/react-redux-cli",
+    "react-redux-cli": "bin/react-redux-cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "react-redux-cli"
+  ],
+  "author": "Frubana",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^4.1.3",
+    "chalk": "^3.0.0",
+    "ejs": "^3.0.1",
+    "esm": "^3.2.25",
+    "inquirer": "^7.0.6"
+  }
+}

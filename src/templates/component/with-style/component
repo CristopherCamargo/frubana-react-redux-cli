@@ -1,0 +1,8 @@
+import React from 'react';
+import { <%= componentName %>Wrapper } from './styles';
+
+const <%= componentName %> = () => {
+  return <<%= componentName %>Wrapper></<%= componentName %>Wrapper>;
+};
+
+export default <%= componentName %>;

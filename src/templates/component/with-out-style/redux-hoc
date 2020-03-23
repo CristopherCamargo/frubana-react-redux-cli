@@ -1,0 +1,8 @@
+import React from 'react';
+import { <%= componentName %> } from './';
+
+const <%= componentName %>HOC = () => {
+  return <<%= componentName %> />;
+};
+
+export default <%= componentName %>HOC;

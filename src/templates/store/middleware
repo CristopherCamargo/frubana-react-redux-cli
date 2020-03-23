@@ -1,0 +1,9 @@
+import { Middleware, AnyAction } from 'redux';
+
+const <%= storeName %>Middleware: Middleware = ({ getState, dispatch }) => next => (
+  action: AnyAction
+) => {
+  return next(action);
+}
+
+export default <%= storeName %>Middleware;
